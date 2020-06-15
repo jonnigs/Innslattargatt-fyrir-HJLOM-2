@@ -1,8 +1,9 @@
 var kennitala = document.getElementsByClassName("kennitala").item(0);
+var kennitoluDiv = document.getElementsByClassName("kennitoluDiv").item(0);
 var validKennitala = false;
+
 var bil = false;
 var birthDate = new Date(2020, 0, 1, 0, 0, 0, 0);
-var kennitoluDiv = document.getElementsByClassName("kennitoluDiv").item(0);
 var profdagur = document.getElementsByClassName("profdagur").item(0);
 var aldursDiv = document.getElementsByClassName("aldursDiv").item(0);
 
@@ -60,142 +61,50 @@ profdagur.addEventListener("input", (e) => {
 
 document;
 rim.addEventListener("input", (e) => {
-  var rimFaerni = rimTafla(bil, rim.value);
-
-  if (rimFaerni == "Mjög slök færni") {
-    rim.className = "rim msf";
-  } else if (rimFaerni == "Slök færni") {
-    rim.className = "rim sf";
-  } else if (rimFaerni == "Meðalfærni") {
-    rim.className = "rim mf";
-  } else if (rimFaerni == "Góð færni") {
-    rim.className = "rim gf";
-  } else {
-    rim.className = "rim neutral";
-  }
+  rimFaerni(bil, rim.value);
 });
 
 document;
 samstoflur.addEventListener("input", (e) => {
-  var samstofluFaerni = samstofluTafla(bil, samstoflur.value);
-  if (samstofluFaerni == "Mjög slök færni") {
-    samstoflur.className = "samstoflur msf";
-  } else if (samstofluFaerni == "Slök færni") {
-    samstoflur.className = "samstoflur sf";
-  } else if (samstofluFaerni == "Meðalfærni") {
-    samstoflur.className = "samstoflur mf";
-  } else if (samstofluFaerni == "Góð færni") {
-    samstoflur.className = "samstoflur gf";
-  } else {
-    samstoflur.className = "samstoflur neutral";
-  }
+  samstofluFaerni(bil, samstoflur.value);
 });
 
 document;
 samsett.addEventListener("input", (e) => {
-  var samsettFaerni = samsettTafla(bil, samsett.value);
-  if (samsettFaerni == "Mjög slök færni") {
-    samsett.className = "samsett msf";
-  } else if (samsettFaerni == "Slök færni") {
-    samsett.className = "samsett sf";
-  } else if (samsettFaerni == "Meðalfærni") {
-    samsett.className = "samsett mf";
-  } else if (samsettFaerni == "Góð færni") {
-    samsett.className = "samsett gf";
-  } else {
-    samsett.className = "samsett neutral";
-  }
+  samsettFaerni(bil, samsett.value);
 });
 
 document;
 hljodgreining.addEventListener("input", (e) => {
-  var hljodgreiningarFaerni = hljodgreiningarTafla(bil, hljodgreining.value);
-  if (hljodgreiningarFaerni == "Mjög slök færni") {
-    hljodgreining.className = "hljodgreining msf";
-  } else if (hljodgreiningarFaerni == "Slök færni") {
-    hljodgreining.className = "hljodgreining sf";
-  } else if (hljodgreiningarFaerni == "Meðalfærni") {
-    hljodgreining.className = "hljodgreining mf";
-  } else if (hljodgreiningarFaerni == "Góð færni") {
-    hljodgreining.className = "hljodgreining gf";
-  } else {
-    hljodgreining.className = "hljodgreining neutral";
-  }
+  hljodgreiningarFaerni(bil, hljodgreining.value);
 });
 
 document;
 margraed.addEventListener("input", (e) => {
-  var margraedFaerni = margraedTafla(bil, margraed.value);
-  if (margraedFaerni == "Mjög slök færni") {
-    margraed.className = "margraed msf";
-  } else if (margraedFaerni == "Slök færni") {
-    margraed.className = "margraed sf";
-  } else if (margraedFaerni == "Meðalfærni") {
-    margraed.className = "margraed mf";
-  } else if (margraedFaerni == "Góð færni") {
-    margraed.className = "margraed gf";
-  } else {
-    margraed.className = "margraed neutral";
-  }
+  margraedFaerni(bil, margraed.value);
 });
 
 document;
 ordhlutaeyding.addEventListener("input", (e) => {
-  var ordhlutaeydingarFaerni = ordhlutaeydingarTafla(bil, ordhlutaeyding.value);
-  if (ordhlutaeydingarFaerni == "Mjög slök færni") {
-    ordhlutaeyding.className = "ordhlutaeyding msf";
-  } else if (ordhlutaeydingarFaerni == "Slök færni") {
-    ordhlutaeyding.className = "ordhlutaeyding sf";
-  } else if (ordhlutaeydingarFaerni == "Meðalfærni") {
-    ordhlutaeyding.className = "ordhlutaeyding mf";
-  } else if (ordhlutaeydingarFaerni == "Góð færni") {
-    ordhlutaeyding.className = "ordhlutaeyding gf";
-  } else {
-    ordhlutaeyding.className = "ordhlutaeyding neutral";
-  }
+  ordhlutaeydingarFaerni(bil, ordhlutaeyding.value);
 });
 
 document;
 hljodtenging.addEventListener("input", (e) => {
-  var hljodtengingarFaerni = hljodtengingarTafla(bil, hljodtenging.value);
-  if (hljodtengingarFaerni == "Mjög slök færni") {
-    hljodtenging.className = "hljodtenging msf";
-  } else if (hljodtengingarFaerni == "Slök færni") {
-    hljodtenging.className = "hljodtenging sf";
-  } else if (hljodtengingarFaerni == "Meðalfærni") {
-    hljodtenging.className = "hljodtenging mf";
-  } else if (hljodtengingarFaerni == "Góð færni") {
-    hljodtenging.className = "hljodtenging gf";
-  } else {
-    hljodtenging.className = "hljodtenging neutral";
-  }
+  hljodtengingarFaerni(bil, hljodtenging.value);
 });
 
 document;
 submit.addEventListener("click", (e) => {
   e.preventDefault();
-  var sum =
-    Number(rim.value) +
-    Number(samstoflur.value) +
-    Number(samsett.value) +
-    Number(hljodgreining.value) +
-    Number(margraed.value) +
-    Number(ordhlutaeyding.value) +
-    Number(hljodtenging.value);
-  console.log(sum);
-  var heild = heildartafla(bil, sum);
+  var stig = sum();
+  var heildarNidurstada = heildarFaerni(bil, stig);
+
   var nidurstoduTexti = document.createElement("p");
+  nidurstoduTexti.textContent = stig + " stig: " + heildarNidurstada[0];
+  nidurstoduTexti.className = heildarNidurstada[1];
 
-  if (heild == "Mjög slök færni") {
-    nidurstoduTexti.textContent("Nemandi hefur mjög slaka færni.");
-  } else if (heild == "Slök færni") {
-    nidurstoduTexti.textContent("Nemandi hefur slaka færni.");
-  } else if (heild == "Medalfærni") {
-    nidurstoduTexti.textContent("Nemandi hefur meðalfæni.");
-  } else {
-    nidurstoduTexti.textContent("Nemandi hefur góða færni.");
-  }
-
+  empty(nidurstoduDiv);
   nidurstoduDiv.appendChild(nidurstoduTexti);
 });
 
@@ -205,6 +114,25 @@ function empty(el) {
     el.removeChild(el.firstChild);
   }
 }
+
+// Fall sem leggur öll stig saman
+function sum() {
+  var stig =
+    Number(rim.value) +
+    Number(samstoflur.value) +
+    Number(samsett.value) +
+    Number(hljodgreining.value) +
+    Number(margraed.value) +
+    Number(ordhlutaeyding.value) +
+    Number(hljodtenging.value);
+
+  if (stig == NaN) {
+    return "error";
+  } else {
+    return stig;
+  }
+}
+
 // Athugar hvort að gefin kennitala sé valid
 function checkKennitala(x) {
   if (x.length != 10) {
@@ -246,7 +174,7 @@ function setAldurDagar() {
   return aldurDagar;
 }
 
-// Fall sem tekur inn aldur barns í dögum og skilar viðeigandi aldrusbili.
+// Fall sem tekur inn aldur barns í dögum og skilar viðeigandi aldursbili.
 function setAldursbil(dagar) {
   if (dagar < 1747) {
     return "ungur";
