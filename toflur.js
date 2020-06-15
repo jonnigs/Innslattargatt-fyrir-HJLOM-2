@@ -1,7 +1,7 @@
 function rimTafla(aldursbil, stig) {
   if (stig == "-") {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 3) {
       return "Mjög slök færni";
     } else if (stig < 6) {
@@ -11,7 +11,7 @@ function rimTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 5) {
       return "Mjög slök færni";
     } else if (stig < 7) {
@@ -21,7 +21,7 @@ function rimTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 6) {
       return "Mjög slök færni";
     } else if (stig < 9) {
@@ -29,7 +29,7 @@ function rimTafla(aldursbil, stig) {
     } else {
       return "Meðalfærni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 7) {
       return "Mjög slök færni";
     } else if (stig < 10) {
@@ -43,7 +43,7 @@ function rimTafla(aldursbil, stig) {
 function samstofluTafla(aldursbil, stig) {
   if (stig == "-") {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 4) {
       return "Mjög slök færni";
     } else if (stig < 6) {
@@ -51,7 +51,7 @@ function samstofluTafla(aldursbil, stig) {
     } else {
       return "Meðalfærni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 5) {
       return "Mjög slök færni";
     } else if (stig < 6) {
@@ -59,7 +59,7 @@ function samstofluTafla(aldursbil, stig) {
     } else {
       return "Meðalfærni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 5) {
       return "Mjög slök færni";
     } else if (stig < 7) {
@@ -67,7 +67,7 @@ function samstofluTafla(aldursbil, stig) {
     } else {
       return "Meðalfærni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 6) {
       return "Mjög slök færni";
     } else if (stig < 8) {
@@ -83,7 +83,7 @@ function samstofluTafla(aldursbil, stig) {
 function samsettTafla(aldursbil, stig) {
   if (stig == "-") {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 1) {
       return "Mjög slök færni";
     } else if (stig < 3) {
@@ -93,7 +93,7 @@ function samsettTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 2) {
       return "Mjög slök færni";
     } else if (stig < 5) {
@@ -103,7 +103,7 @@ function samsettTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 3) {
       return "Mjög slök færni";
     } else if (stig < 6) {
@@ -113,7 +113,7 @@ function samsettTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 4) {
       return "Mjög slök færni";
     } else if (stig < 7) {
@@ -131,25 +131,25 @@ function samsettTafla(aldursbil, stig) {
 function hljodgreiningarTafla(aldursbil, stig) {
   if (stig == "-") {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 6) {
       return "Meðalfærni";
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 9) {
       return "Meðalfærni";
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 12) {
       return "Meðalfærni";
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 3) {
       return "Slök færni";
     } else if (stig < 15) {
@@ -165,7 +165,7 @@ function hljodgreiningarTafla(aldursbil, stig) {
 function margraedTafla(aldursbil, stig) {
   if (stig == "-") {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 4) {
       return "Mjög slök færni";
     } else if (stig < 5) {
@@ -175,7 +175,7 @@ function margraedTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 4) {
       return "Mjög slök færni";
     } else if (stig < 6) {
@@ -185,7 +185,7 @@ function margraedTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 5) {
       return "Mjög slök færni";
     } else if (stig < 6) {
@@ -193,7 +193,7 @@ function margraedTafla(aldursbil, stig) {
     } else {
       return "Meðalfærni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 5) {
       return "Mjög slök færni";
     } else if (stig < 7) {
@@ -209,7 +209,7 @@ function margraedTafla(aldursbil, stig) {
 function ordhlutaeydingarTafla(aldursbil, stig) {
   if (stig == "-") {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 1) {
       return "Mjög slök færni";
     } else if (stig < 3) {
@@ -219,7 +219,7 @@ function ordhlutaeydingarTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 2) {
       return "Mjög slök færni";
     } else if (stig < 4) {
@@ -229,7 +229,7 @@ function ordhlutaeydingarTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 2) {
       return "Mjög slök færni";
     } else if (stig < 5) {
@@ -239,7 +239,7 @@ function ordhlutaeydingarTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 2) {
       return "Mjög slök færni";
     } else if (stig < 5) {
@@ -257,7 +257,7 @@ function ordhlutaeydingarTafla(aldursbil, stig) {
 function hljodtengingarTafla(aldursbil, stig) {
   if (stig == "-") {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 1) {
       return "Mjög slök færni";
     } else if (stig < 2) {
@@ -267,7 +267,7 @@ function hljodtengingarTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 1) {
       return "Mjög slök færni";
     } else if (stig < 2) {
@@ -277,7 +277,7 @@ function hljodtengingarTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 2) {
       return "Mjög slök færni";
     } else if (stig < 3) {
@@ -287,7 +287,7 @@ function hljodtengingarTafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 2) {
       return "Mjög slök færni";
     } else if (stig < 3) {
@@ -303,9 +303,9 @@ function hljodtengingarTafla(aldursbil, stig) {
 }
 
 function heildartafla(aldursbil, stig) {
-  if (!Number(stig)) {
+  if (!Number(stig) && stig !== 0) {
     return "Óþekkt stig eða aldursbil";
-  } else if (aldursbil == "Aldursbil 1") {
+  } else if (aldursbil == "Aldursbil 1" || aldursbil == 1) {
     if (stig < 21) {
       return "Mjög slök færni";
     } else if (stig < 27) {
@@ -315,7 +315,7 @@ function heildartafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 2") {
+  } else if (aldursbil == "Aldursbil 2" || aldursbil == 2) {
     if (stig < 26) {
       return "Mjög slök færni";
     } else if (stig < 32) {
@@ -325,7 +325,7 @@ function heildartafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 3") {
+  } else if (aldursbil == "Aldursbil 3" || aldursbil == 3) {
     if (stig < 32) {
       return "Mjög slök færni";
     } else if (stig < 38) {
@@ -335,7 +335,7 @@ function heildartafla(aldursbil, stig) {
     } else {
       return "Góð færni";
     }
-  } else if (aldursbil == "Aldursbil 4") {
+  } else if (aldursbil == "Aldursbil 4" || aldursbil == 4) {
     if (stig < 33) {
       return "Mjög slök færni";
     } else if (stig < 42) {

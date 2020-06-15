@@ -8,7 +8,17 @@
   </head>
   <body>
     <h1>Innsláttargátt fyrir HLJÓM-2</h1>
-    <form>
+    <div class="upplysingar">
+      <p>Kennari: Jón Jónsson</p>
+      <p>Kt: 000000-0000</p>
+      <p>Leikskóli: Grænatún</p>
+      <div class="fjoldaDiv">
+        <p>Fjöldi nemanda í prófi:</p>
+        <input class="fjoldi" type="number" min="1" value="1" />
+      </div>
+    </div>
+    <div class="harmonikkuDiv"></div>
+    <form class="hide">
       <label>Nafn nemanda</label>
       <input class="nafn" type="text" />
       <label>Kennitala nemanda</label>
@@ -35,7 +45,7 @@
           <option value="11">11</option>
           <option value="12">12</option>
         </select>
-        <a href="toflur.html?tafla=rim" target="_blank">
+        <a href="toflur.html?tafla=rim&sp=12" target="_blank">
           <img src="./information.svg" alt="upplýsingatákn" />
         </a>
       </div>
@@ -53,7 +63,9 @@
           <option value="7">7</option>
           <option value="8">8</option>
         </select>
-        <img src="./information.svg" alt="upplýsingatákn" />
+        <a href="toflur.html?tafla=samstoflur&sp=8" target="_blank">
+          <img src="./information.svg" alt="upplýsingatákn" />
+        </a>
       </div>
       <label>Stigafjöldi: 3. Samsett orð</label>
       <div class="dropdown">
@@ -71,7 +83,9 @@
           <option value="9">9</option>
           <option value="10">10</option>
         </select>
-        <img src="./information.svg" alt="upplýsingatákn" />
+        <a href="toflur.html?tafla=samsett&sp=10" target="_blank">
+          <img src="./information.svg" alt="upplýsingatákn" />
+        </a>
       </div>
       <label>Stigafjöldi: 4. Hljóðgreining</label>
       <div class="dropdown">
@@ -84,7 +98,9 @@
           <option value="12">12</option>
           <option value="15">15</option>
         </select>
-        <img src="./information.svg" alt="upplýsingatákn" />
+        <a href="toflur.html?tafla=hljodgreining&sp=15" target="_blank">
+          <img src="./information.svg" alt="upplýsingatákn" />
+        </a>
       </div>
       <label>Stigafjöldi: 5. Margræð orð</label>
       <div class="dropdown">
@@ -100,7 +116,9 @@
           <option value="7">7</option>
           <option value="8">8</option>
         </select>
-        <img src="./information.svg" alt="upplýsingatákn" />
+        <a href="toflur.html?tafla=margraed&sp=8" target="_blank">
+          <img src="./information.svg" alt="upplýsingatákn" />
+        </a>
       </div>
       <label>Stigafjöldi: 6. Orðhlutaeyðing</label>
       <div class="dropdown">
@@ -118,7 +136,9 @@
           <option value="9">9</option>
           <option value="10">10</option>
         </select>
-        <img src="./information.svg" alt="upplýsingatákn" />
+        <a href="toflur.html?tafla=ordhlutaeyding&sp=10" target="_blank">
+          <img src="./information.svg" alt="upplýsingatákn" />
+        </a>
       </div>
       <label>Stigafjöldi: 7. Hljóðtenging</label>
       <div class="dropdown">
@@ -134,12 +154,19 @@
           <option value="7">7</option>
           <option value="8">8</option>
         </select>
-        <img src="./information.svg" alt="upplýsingatákn" />
+        <a href="toflur.html?tafla=hljodtenging&sp=8" target="_blank">
+          <img src="./information.svg" alt="upplýsingatákn" />
+        </a>
       </div>
-
-      <input type="submit" class="button" />
+      <div class="submitDiv">
+        <input type="submit" class="button" value="Reikna niðurstöður" />
+        <a href="toflur.html?tafla=heild&sp=71" target="_blank">
+          <img src="./information.svg" alt="upplýsingatákn" />
+        </a>
+      </div>
     </form>
     <div class="nidurstoduDiv"></div>
+    <script src="repeat.js"></script>
     <script src="scripts.js"></script>
     <script src="toflur.js"></script>
   </body>
