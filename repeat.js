@@ -25,13 +25,8 @@ fjoldi.addEventListener("input", (e) => {
     p.className = "visable " + i;
     nemandi.appendChild(p);
 
-    // Texti sem birtist þegar item er opnað
-    generateForm(i);
-    var p2 = document.createElement("p");
-    p2.textContent = "Birtist þetta?";
-    p2.className = "hide " + i;
-    p2.id = i;
-    nemandi.appendChild(p2);
+    // Form sem birtist þegar item er opnað
+    nemandi.appendChild(generateForm(i));
 
     harmonikka.appendChild(nemandi);
   }
@@ -72,4 +67,30 @@ function generateForm(id) {
   var nafnInput = document.createElement("input");
   var ktLabel = document.createElement("label");
   var ktInput = document.createElement("input");
+  var profLabel = document.createElement("label");
+  var profInput = document.createElement("input");
+  var d1 = generateDD(1);
+  var d2 = generateDD(2);
+  var d3 = generateDD(3);
+  var d4 = generateDD(4);
+  var d5 = generateDD(5);
+  var d6 = generateDD(6);
+  var d7 = generateDD(7);
+
+  nafnLabel.textContent = "Nafn nemanda";
+  ktLabel.textContent = "Kennitala nemanda";
+
+  form.appendChild(nafnLabel);
+  form.appendChild(nafnInput);
+  form.appendChild(ktLabel);
+  form.appendChild(ktInput);
+
+  form.className = "hide " + id;
+
+  return form;
+}
+
+// Fall sem býr til Dropdown valmöguleika fyrir stigafjölda
+function generateDD(num) {
+  var div = document.createElement("div");
 }
